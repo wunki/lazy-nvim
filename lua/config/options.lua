@@ -12,8 +12,8 @@ opt.softtabstop = 4
 opt.tabstop = 4
 opt.list = false
 
--- This disables the notifications when you try to get information
--- and one of the LSPs has no information available.
+-- disable the `no information available` pop-up when you have
+-- multiple LSPs running
 vim.lsp.handlers["textDocument/hover"] = function(_, result, ctx, config)
   config = config or {}
   config.focus_id = ctx.method

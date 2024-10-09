@@ -37,7 +37,7 @@ return {
     opts = {
       servers = {
         elixirls = {
-          cmd = { vim.fn.expand("~/.local/share/elixir-ls/release/language_server.sh") },
+          cmd = { vim.fn.expand("~/.local/share/elixir-ls/language_server.sh") },
         },
       },
     },

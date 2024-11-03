@@ -5,7 +5,7 @@ return {
       icons_enabled = false,
       section_separators = "",
       component_separators = "",
-      theme = "monokai-pro",
+      -- theme = "monokai-pro",
     }
     opts.sections = {
       lualine_a = { "mode" },

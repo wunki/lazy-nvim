@@ -5,13 +5,12 @@ return {
       icons_enabled = false,
       section_separators = "",
       component_separators = "",
-      -- theme = "monokai-pro",
     }
     opts.sections = {
       lualine_a = { "mode" },
-      lualine_b = { "branch" },
+      lualine_b = {},
       lualine_c = { { LazyVim.lualine.pretty_path() } },
-      lualine_y = {},
+      lualine_y = { "branch" },
       lualine_z = { "location" },
       lualine_x = {},
     }

@@ -5,5 +5,6 @@ return {
     ---@field enabled? boolean
     statuscolumn = { enabled = false },
     dashboard = { enabled = false },
+    indent = { enabled = false },
   },
 }

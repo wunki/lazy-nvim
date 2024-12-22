@@ -1,8 +1,9 @@
 return {
   {
     "loctvl842/monokai-pro.nvim",
+    enabled = false,
     opts = {
-      filter = "ristretto",
+      filter = "spectrum",
       styles = {
         comment = { italic = true },
         keyword = { italic = false },
@@ -16,15 +17,11 @@ return {
     },
   },
   {
-    "folke/tokyonight.nvim",
+    "AlexvZyl/nordic.nvim",
     lazy = false,
     priority = 1000,
-    opts = {},
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "monokai-pro",
-    },
+    config = function()
+      require("nordic").load()
+    end,
   },
 }
